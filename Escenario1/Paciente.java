@@ -1,3 +1,5 @@
+package Escenario1;
+
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -28,7 +30,7 @@ public class Paciente implements Comparable<Paciente> {
 
     @Override
     public String toString() {
-        return "Paciente[" + documento + " | " + nombre + " | " + estadoSalud + " | " + horaLlegada + "]";
+        return "Escenario1.Paciente[" + documento + " | " + nombre + " | " + estadoSalud + " | " + horaLlegada + "]";
     }
 
     @Override
@@ -38,7 +40,7 @@ public class Paciente implements Comparable<Paciente> {
         return Long.compare(ordenLlegada, o.ordenLlegada);
     }
 
-    // operaciones estáticas que antes residían en SistemaHospital
+    // operaciones estáticas que antes residían en Escenario1.SistemaHospital
     public static void registrar(String doc, String nombre, String estado) {
         if (registroMap.containsKey(doc)) {
             System.out.println("Error: El paciente con documento " + doc + " ya está registrado.");
@@ -76,11 +78,11 @@ public class Paciente implements Comparable<Paciente> {
 class SistemaHospital {
     // HashMap para búsqueda O(1) y evitar duplicados
     private Map<String, Paciente> registroMap = new HashMap<>();
-    // PriorityQueue para atención por prioridad (Paciente es Comparable)
+    // PriorityQueue para atención por prioridad (Escenario1.Paciente es Comparable)
     private PriorityQueue<Paciente> colaAtencion = new PriorityQueue<>();
 
     public SistemaHospital() {
-        // la cola usa el orden natural definido en Paciente.compareTo
+        // la cola usa el orden natural definido en Escenario1.Paciente.compareTo
     }
 
     public void registrarPaciente(String doc, String nombre, String estado) {
