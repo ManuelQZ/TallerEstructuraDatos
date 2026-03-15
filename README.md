@@ -1,5 +1,7 @@
 # Taller de Escenarios de Estructuras de Datos en Java
 
+# Intregrantes: Juanita Maria Viveros Jansasoy, Jorge Simon Nieto Celemin, Manuel Javier Quintero Zapata
+
 Este repositorio contiene cuatro escenarios independientes que demuestran el uso de distintas estructuras de datos en Java (`HashMap`, `TreeMap`, `PriorityQueue`, `ArrayDeque`, etc.) para resolver problemas comunes de gestión, priorización y búsqueda eficiente. Cada escenario se encuentra en su propia carpeta dentro del proyecto.
 
 ## Estructura del Proyecto
